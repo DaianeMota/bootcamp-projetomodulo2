@@ -9,41 +9,50 @@
         body {
            background-color: #CCCCCC;
         } 
-
+        
         .container {
            background-image: linear-gradient(#200D23, #641F6F);
             margin: auto;
             padding: auto;
-
             width: 600px;
             height: 650px;
-            border-radius: 5px;
-            
+            border-radius: 5px;    
         }
 
         .container-2{
            background-image: linear-gradient(#631F6F, #1F0D22);
-            margin: 25px;
+            margin: 25px ;
             width: 550px;
-            height: 430px;
+            height: 420px;
             border-radius: 5px;
         }
 
         .title {
-            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
             color: #FECD23;
             padding: 20px;
             text-align: center;
         }
 
         .header {
-           /* font-family: pierce jameson sans;*/
-            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 10px;
             text-align: center;
+            margin: 10px;
             color: #FFFFFF;
         }
 
+        .header-1 {
+            color:#CCCCCC;
+            font-size: 14px;
+            margin: -18px;
+            margin-left: 210px;
+        }
+
         .header-2 {
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
             text-align: center;
             color: #FFFFFF;
@@ -55,46 +64,169 @@
         }
 
         .block-1 {
+            font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(#3E60EF, #6EC5FD);
             width: 100px;
             height: 200px;
             margin: 20px;
-            margin-top: 110px;
+            margin-top: 10px;
             padding: 20px;
             display: flex;
             justify-content: space-around;
-            box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0) #2638DC;
+           /* box-shadow: 0px 0px 0px  rgb(0, 0, 0);*/
             border-radius: 5px;
+            border: 10px solid #3f1fcf; 
+            color: #CCCCCC;
         }
 
-        .block-2 {
-            background-image: linear-gradient(#3E60EF, #6EC5FD);
-            width: 100px;
-            height: 200px;
-            margin: 20px;
-            margin-top: 110px;
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
-            border-radius: 5px;
-
+        .imput {
+            margin: 10px 70px ;
+            justify-content: space-between;
+            width: 400px;
         }
 
-        .block-3 {
-            background-image: linear-gradient(#3E60EF, #6EC5FD);
-            width: 100px;
-            height: 200px;
-            margin: 20px;
-            margin-top: 110px;
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
-            border-radius: 5px;
+        .button {
+            width: 70px;
+            height: 30px;
+            margin-top: 180px;
+            margin-left: -150px;
+            background-color: #1F0D22;
+            color: #CCCCCC; 
         }
 
+        .imagem-1{
+            margin-left: -135px;
+            width: 220px;
+            height: 220px;
+        }
+
+        .imagem-2{
+            margin-left: -150px;
+            width: 220px;
+            height: 220px;
+        }
+        
+        .imagem-3{
+            margin-left: -142px;
+            width: 220px;
+            height: 220px;
+        } 
+
+
+        @media screen and (max-width: 620px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-2 {
+        width: auto;
+        height: auto;
+        margin: center; /* Reduzir um pouco a margem interna para telas menores */
         
 
-       
+    }
+
+    .title {
+        font-size: 20px; /* Reduzir um pouco o tamanho da fonte do título */
+        padding: 10px; /* Reduzir o padding do título */
+    }
+
+    .header {
+        font-size: 12px; /* Reduzir o tamanho da fonte dos headers */
+        margin: 5px; /* Reduzir a margem dos headers */
+    }
+
+    .header-1 {
+        font-size: 12px;
+        margin: auto;
+        margin-left: 20%;
+        
+        }
+
+    .header-2 {
+        font-size: 14px; /* Reduzir o tamanho da fonte do header 2 */
+        padding: 5px; /* Reduzir o padding do header 2 */
+    }
+
+    .block {
+        flex-direction: column; /* Mudar para layout de coluna para os blocos */
+        align-items: center; /* Centralizar os blocos */
+    }
+
+    .block-1 {
+        width: 50%; /* Ajustar a largura dos blocos */
+        margin: 10px 0; /* Ajustar a margem entre os blocos */
+        text-align: center; /* Centralizar texto dentro dos blocos */
+    }
+
+    .imput {
+        width: 60%;  /*Ajustar a largura dos inputs */
+        margin: center; /* Centralizar e ajustar a margem dos inputs */
+        margin-left: 40px;
+    }
+
+    .button {
+        margin-top: 170px; /* Ajustar margem do botão */
+        margin-left: -190px; /* Resetar margem esquerda do botão */
+    }
+
+    .imagem-1, .imagem-2, .imagem-3 {
+        margin: center;
+        margin-left: -180px; /* Resetar margem esquerda das imagens */
+        /*margin-bottom: 10px; /* Adicionar margem inferior nas imagens */
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+       /* @media screen and (max-width: 620px) {
+            html {
+                font-size: 10px;
+            }
+
+
+           .container {
+            flex-direction: column;
+            padding: auto;
+            width: 100%;   
+            }
+
+        .container-2{
+            flex-direction: column;
+            width: 100%; 
+            }
+
+        .title {
+            flex-direction: column;
+            font-size: 10px;
+            padding: 100%;
+            }
+
+        .header {
+            flex-direction: column;
+            font-size: 10px;         
+            }
+
+        .header-1 {
+            flex-direction: column;
+            font-size: 14px;
+            }
+
+        .header-2 {
+            flex-direction: column;
+            font-size: 15px;
+            padding: 100%;
+            } 
+        }*/
     </style>
 
 
@@ -103,10 +235,11 @@
     <div class="container">
         <div>
             <h1 class="title" >GAMES LOVERS ENQUETE</h1>
-            <h2 class="header">Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por 
-                vídeo games. Participe da nossa enquete e escolha entre os três finalistas!</h2>
-            <h3 class="header">A sua escolha é muito importante para nós.</h3>
-            <h4 class="header">No final da enquete iremos sortear um brinde entre os participantes.</h4>
+            <p class="header">Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por 
+                vídeo games. Participe da nossa enquete e escolha entre os três finalistas!</p>
+            <p class="header">A sua escolha é muito importante para nós.</p>
+            <p class="header">No final da enquete iremos sortear um brinde entre os participantes.</p>
+           
         </div>
         <div class="container-2">
             
@@ -114,26 +247,35 @@
                 Digite os seus dados e escolha entre os três finalistas!
             </div>
 
-            <input type="text"   placeholder="Digite seu nome"/>
-            <input type="email"  placeholder="Digite seu email"/>
+            <input class="imput" type="text"   placeholder="Digite seu nome"/> <br> 
+            <input class="imput" type="email"  placeholder="Digite seu email"/>
 
-           <div class="block">
-                
+           <div class="block">  
                 <div class="block-1">
                      Esportes
+                     <img  src="IMAGEM/Bola.png" 
+                     alt="Bola" class="imagem-1">
+                     <button class="button"> Votar </button>
                 </div>
 
-                <div class="block-2">
+                <div class="block-1">
                       Simulação
+                      <img src="IMAGEM/Aviao.png"
+                      alt="Avião" class="imagem-2" >
+                      <button class="button"> Votar </button>
                 </div>
 
-                <div class="block-3">
+                <div class="block-1">
                      Estratégia
+                     <img src="IMAGEM/estrategia.png" class="imagem-3" >
+                     <button class="button"> Votar </button>
                 </div>
            </div>
+           
         </div>
-
-    </div>
-    
+        <footer class="header-1">
+            <p>@ Desenvolvido por DaianeMota</p>
+        </footer>   
+    </div>  
 </body>
 </html>
